@@ -8,13 +8,18 @@ $(document).ready(function(){
   $cells.click(function(){
     $(this).html($playerTurn);
     console.log(checkForWin());
-    if(checkForWin()) {
-      $('#announce-winner').text('player ' + $playerTurn + ' won!');
+    console.log(gamestillon());
+    if(gamestillon()){
+      if(checkForWin()) {
+        $('#announce-winner').text('player ' + $playerTurn + ' won!');
+      }
+    }
+    else{
+        $('#announce-winner').text('Game Over!');
     }
     $playerTurn = ($playerTurn ==='X') ? 'O' : 'X';
   });
 
-//todo: checkForWin
   function checkForWin(){
     return (horizontalWin() || verticalWin() || diagonalWin());
   }
@@ -34,6 +39,17 @@ $(document).ready(function(){
   function diagonalWin(){
     return ($('[data-cell="0"]').text()===$playerTurn && $('[data-cell="4"]').text()===$playerTurn && $('[data-cell="8"]').text()===$playerTurn) ||
            ($('[data-cell="2"]').text()===$playerTurn && $('[data-cell="4"]').text()===$playerTurn && $('[data-cell="6"]').text()===$playerTurn);
+  }
+
+  function gamestillon(){
+    var gamestillon=false;
+    for(var i=0; i<$cells.length; i++) {
+      console.log($cells[i]);
+      if($($cells[i]).text()===''){
+        gamestillon=true;
+      }
+    }
+    return gamestillon;
   }
 
 });
