@@ -1,5 +1,5 @@
 .main {
-  background: url("https://austin.bcycle.com/images/librariesprovider14/AustinBcycleImages/austinb-cycle-mural.jpg?sfvrsn=0") no-repeat center center fixed;
+  background: url("images/circle_in_wind.JPG") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .theme {
-    height: 300px;
+    height: 350px;
 }
 
 .theme .container {
@@ -15,14 +15,12 @@
 }
 
 h1 {
-    color: #fff;
     font-size: 48px;
     font-weight: bold;
     font-family: 'Shift', sans-serif;
 }
 
 .theme p {
-    color: #fff;
     font-size: 20px;
 }
 
