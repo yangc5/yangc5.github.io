@@ -1,3 +1,31 @@
+.main {
+  background: url("https://austin.bcycle.com/images/librariesprovider14/AustinBcycleImages/austinb-cycle-mural.jpg?sfvrsn=0") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.theme {
+    height: 300px;
+}
+
+.theme .container {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Shift', sans-serif;
+}
+
+.theme p {
+    color: #fff;
+    font-size: 20px;
+}
+
 .nav a {
     color: #5a5a5a;
     font-size: 11px;
@@ -9,59 +37,13 @@
     text-transform: uppercase;
 }
 
-.jumbotron {
-    height: 500px;
-    background-image: url('images/fish_in_pond_mesh.JPG');
-    background-repeat: no-repeat;
-    background-attachedment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.jumbotron h1 {
-    color: #fff;
-    font-size: 48px;
-    font-weight: bold;
-    font-family: 'Shift', sans-serif;
-}
-
-.jumbotron p {
-    color: #fff;
-    font-size: 20px;
-}
-
 .nav li {
     display: inline;
 }
 
-.jumbotron .container {
-    position: relative;
-    top: 100px;
-}
 
-/*hide main section when visitor first vist and intro image full width*/
-/*.main {
-  display: none;
-}*/
 
-.intro {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-}
 
-.intro img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
+
   min-height: 50%;
 }
