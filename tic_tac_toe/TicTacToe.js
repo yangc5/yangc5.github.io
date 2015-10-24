@@ -1,6 +1,9 @@
 "use strict";
 
 $(document).ready(function(){
+  //load header in this page
+  $('.header').load("../header.html");
+
   var $cells=$('[data-cell]');
   var $playerTurn = 'X';
   var $win=false;
