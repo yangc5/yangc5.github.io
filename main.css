@@ -38,3 +38,19 @@ h1 {
 .nav li {
     display: inline;
 }
+
+.jumbotron {
+    height: 500px;
+    background-image: url('images/chen.jpg');
+    background-repeat: no-repeat;
+    background-attachedment: fixed;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.thumbnail img {
+  max-height: 256px;
+}
