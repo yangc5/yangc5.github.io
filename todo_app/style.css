@@ -31,7 +31,6 @@ form {
     border: 1px solid #ccc;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    text-align: center;
     background-color: #fdfdfd;
     width: 100%;
 }
@@ -58,4 +57,19 @@ input[type=text] {
     -webkit-border-radius: 0px;
     border-radius: 0px;
     width: 65%;
+}
+
+
+.item {
+    text-align: left;
+}
+
+input[type='checkbox'] {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+form label {
+    margin-left: 6px;
+    font-weight: normal;
 }
