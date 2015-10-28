@@ -11,9 +11,9 @@ $(function() {
       $("#todo-list").append(todo);
       $(this).find('input[type="text"]').val('');
     }
-
-
   });
+
+  $('#todo-list').sortable();
 
 
 });
