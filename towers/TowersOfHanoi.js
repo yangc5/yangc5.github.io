@@ -2,37 +2,19 @@
 
 $(function(){
 
+  console.log("tower");
+
+  var $blocks = $('[data-block]');
+  var $stacks = $('[data-stack]');
 
 
-  function compareBlock(fromStack, toStack){
-    if($('fromStack:last-child').attr('data-block')<$('toStack:last-child').attr('data-block') || $('toStack').children().length===0) {
-      return true;
-    }
-    else {
-      return false;
-    }
+  $stacks.click(move());
+
+  //First check if there's a detached block, if no, detach the last-child of the clicked stack;
+  //If yes, try dropping.
+  function move() {
+    console.log("move");
   }
-
-  function moveBlock(fromStack, toStack) {
-    if(compareBlock(fromStack, toStack)) {
-      var block = $('fromStack:last-child').detach();
-      toStack.append(block);
-    }
-    else {
-      console.log("can't make this move");
-    }
-  }
-
-  function checkWin() {
-    if ($('[data-stack="1"]').children().length===0&&$('[data-stack="2"]').children().length===0){
-      console.log("You won!");
-      return true;
-    }
-  }
-
-
-
-
 
 
 });
