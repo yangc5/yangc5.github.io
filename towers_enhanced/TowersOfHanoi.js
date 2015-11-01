@@ -2,6 +2,8 @@
 
 $(function(){
 
+  $('.header').load("../header.html");
+
   var gameover = false;
   var $stacks = $('[data-stack]');
   var $blocks = $('[data-block]');
@@ -17,7 +19,6 @@ $(function(){
   $stacks.droppable({
     accept: ".movable",
     drop: function(event, ui) {
-      console.log(goodToDrop($(this), ui.draggable));
       if(!gameover){
         if(goodToDrop($(this), ui.draggable)) {
           ui.draggable.draggable('option', 'revert', false);
