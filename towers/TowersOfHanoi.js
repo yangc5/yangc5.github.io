@@ -7,7 +7,7 @@ $(function(){
   var gameover = false;
 
   $stacks.click(move);
-
+  
   //First check if detached block is empty, if true, detach the last-child of the clicked stack;
   //If yes, try dropping.
   function move() {
